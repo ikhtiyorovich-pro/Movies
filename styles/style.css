@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.container{
+    padding: 0;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.card-list{
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 23px;
+    padding: 30px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.card-list:hover{
+  transform: scale(103%);
+  transition: 1s all;
+}
+
+.photo{
+    margin-bottom: 20px;
+}

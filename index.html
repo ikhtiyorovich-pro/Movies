@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Month-4-Lesson-3 Movies</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="h1 text-center mt-3 mb-5">Movieslar</h1>
+
+        <div class="movies"></div>
+      </div>
+    </main>
+    <template id="movie-card-template">
+      <li class="movie col-md-3 mb-3">
+        <div class="movie__card card border-0 shadow-sm">
+          <img
+            class="movie__img card-img-top"
+            src="https://via.placeholder.com/300x200"
+            alt="Movie picture"
+            width="300"
+            height="200"
+          />
+          <div class="movie__card-body card-body text-center">
+            <h2 class="movie__name h4 card-title">Movie name</h2>
+            <div class="movie__type cart-text">Grass, Electric</div>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <script src="./js/utility.js"></script>
+    <script src="./js/movies.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
