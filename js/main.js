@@ -32,6 +32,7 @@ for (var i = 0; i < movies.length; i++) {
 
   var elMovieSummary = document.createElement('p')
   elMovieSummary.textContent = movies[i].summary;
+  elMovieSummary.setAttribute("class", "movies-p")
 
   var elMovieYear = document.createElement('p')
   elMovieYear.textContent = movies[i].movie_year;
