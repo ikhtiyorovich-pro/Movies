@@ -27,8 +27,12 @@ for (var i = 0; i < movies.length; i++) {
   var elMovieImg = document.createElement("img")
   elMovieImg.src = "https://picsum.photos/200/150";
   elMovieImg.setAttribute("class", "photo")
+
   var elMovieTittle = document.createElement("h2");
   elMovieTittle.textContent = movies[i].Tittle;
+
+  var elMovieCategories = document.createElement('h5')
+  elMovieCategories.textContent = movies[i].Categories.split("|").join(", ");
 
   var elMovieSummary = document.createElement('p')
   elMovieSummary.textContent = movies[i].summary;
@@ -36,9 +40,12 @@ for (var i = 0; i < movies.length; i++) {
 
   var elMovieYear = document.createElement('p')
   elMovieYear.textContent = movies[i].movie_year;
+
+
   
   elMovieDiv.appendChild(elMovieImg);
   elMovieDiv.appendChild(elMovieTittle);
+  elMovieDiv.appendChild(elMovieCategories);
   elMovieDiv.appendChild(elMovieSummary);
   elMovieDiv.appendChild(elMovieYear);
   elCards.appendChild(elMovieDiv);
